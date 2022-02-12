@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+MAINTAINER vildanAslan
+COPY target/todolist-docker.jar todolist.jar
+ENTRYPOINT ["java","-jar","/todolist.jar"]
